@@ -13,7 +13,9 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="a5a003d4-3e0d-4b69-9f5b-a9697da37732">
-      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from]]></console>
+      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from ogrencilerr
+
+delete from ogrencilerr where ogrenci_ismi= 'Sena Can']]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -22,9 +24,15 @@
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
+  </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
+  </component>
+  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
+    <recently-used-interfaces />
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
