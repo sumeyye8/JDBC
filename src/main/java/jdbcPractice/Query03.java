@@ -11,6 +11,7 @@ public class Query03 {
         Statement st = con.createStatement();
 
 
+
         PreparedStatement ps = con.prepareStatement("select * from ogrenciler");
 
         ResultSet rs = ps.executeQuery();
