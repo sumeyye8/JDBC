@@ -1,9 +1,6 @@
 package jdbcPractice;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class Query03 {
 
@@ -14,8 +11,24 @@ public class Query03 {
         Statement st = con.createStatement();
 
 
+        PreparedStatement ps = con.prepareStatement("select * from ogrenciler");
 
+        ResultSet rs = ps.executeQuery();
 
+        ResultSetMetaData rsmd = rs.getMetaData();
+        System.out.println("Sutun sayisi: " + rsmd.getColumnCount());
+
+        System.out.println(" 1. Sutunun ismi: " + rsmd.getColumnName(1));
+        System.out.println(" 2. Sutunun ismi: " + rsmd.getColumnName(2));
+        System.out.println(" 3. Sutunun ismi: " + rsmd.getColumnName(3));
+        System.out.println(" 4. Sutunun ismi: " + rsmd.getColumnName(4));
+
+        System.out.println(" 1. Sutunun Data Tipi : " + rsmd.getColumnTypeName(1));
+        System.out.println(" 2. Sutunun Data Tipi : " + rsmd.getColumnTypeName(2));
+        System.out.println(" 3. Sutunun Data Tipi : " + rsmd.getColumnTypeName(3));
+        System.out.println(" 4. Sutunun Data Tipi : " + rsmd.getColumnTypeName(4));
+
+        System.out.println("Tablo ismi: " + rsmd.getTableName(2));
 
     }
 }
